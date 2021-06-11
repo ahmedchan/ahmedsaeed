@@ -1,0 +1,45 @@
+.block_labels {
+   .form_row {
+      display: block;
+      .form_label {
+         display: block;
+         width:100%;
+         margin-bottom:4px;
+      }
+   }
+}
+
+.form_row {
+   display: flex;
+   justify-content: flex-start;
+   align-items:center;
+   margin:10px 0;
+
+   .form_label {
+      min-width:80px;
+      max-width:120px;
+      width:80px;
+      margin:0;
+   }
+
+   .form_input {
+      padding:0 12px;
+      box-sizing:border-box;
+      height:38px;
+      outline:none;
+      color:$primaryColor;
+      width:100%;
+      background: white;
+      border:1px solid #e2e2e2;
+      border-radius:4px;
+      resize:none;
+   }
+
+   textarea.form_input {
+      height:100px;
+   }
+}
+
+.error {
+   color:#d32f2f;
+}

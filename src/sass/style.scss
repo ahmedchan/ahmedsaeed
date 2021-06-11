@@ -1,0 +1,46 @@
+.slide-appear {
+	opacity:0;
+	transform:scale(.8) translateY(10px);
+}
+.slide-appear.slide-appear-active {
+	opacity:1;
+	transform:scale(1) translateY(0);
+	transition:transform 700ms ease-in-out, opacity 500ms ease-in-out;
+}
+.slide-appear.slide-appear-done {
+	opacity:1;
+}
+
+// effect
+.slide-enter {
+	opacity:0;
+	transform:scale(.8)  translateY(10px);
+}
+.slide-enter.slide-enter-active {
+	opacity:1;
+	transform:scale(1)  translateY(0);
+	transition:transform 700ms ease-in-out, opacity 500ms ease-in-out;
+}
+// exit
+.slide-exit {
+	opacity:1;
+	transform:scale(1)  translateY(0);
+}
+.slide-exit.slide-exit-active {
+	opacity:0;
+	transform:scale(.8)  translateY(10px);
+}
+.slide-exit.slide-exit-done {
+	opacity:0;
+}
+
+
+@import 'variables';
+@import 'common';
+@import 'reset';
+@import 'fontawesome';
+@import 'animate';
+@import 'buttons';
+@import 'modal';
+@import 'forms';
+@import 'modules';
